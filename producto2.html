@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Producto A - Tienda en Línea</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tienda en Línea</h1>
+        <nav>
+            <a href="index.html">Inicio</a>
+            <button id="ver-carrito">Carrito (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+    <main>
+        <section id="producto-detalle">
+            <h2>camisa vintage</h2>
+            <img src="imagenes/camisa5.webp" alt="Producto A">
+            <p>camisa estili vintage,manga corta. Este producto es 100% algodon</p>
+            <p>Precio: $10</p>
+            <button onclick="agregarAlCarrito(1)">Agregar al Carrito</button>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <div id="carrito-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-lista"></div>
+            <p id="carrito-total"></p>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

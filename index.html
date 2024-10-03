@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda en Línea - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Imagen fija en el fondo -->
+    <img src="imagenes/fondo.png" alt="fondo" class="imagen-fija">
+
+    <header>
+        <h1 class="titulo">Tienda en Línea</h1>
+        <nav class="navi">
+            <a href="index.html">Inicio</a>
+            <button id="ver-carrito">Carrito (<span id="cart-count">0</span>)</button>
+        </nav>
+    </header>
+    
+    <main>
+        <section id="productos-destacados">
+            <h2>Productos Destacados</h2>
+            <div id="productos-lista">
+                <!-- Productos se generarán dinámicamente -->
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>© 2024 Tienda en Línea. Todos los derechos reservados.</p>
+    </footer>
+
+    <!-- Modal del carrito -->
+    <div id="carrito-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Carrito de Compras</h2>
+            <div id="carrito-lista"></div>
+            <p id="carrito-total"></p>
+            <button id="borrar-carrito">Borrar Carrito</button>
+            <button id="comprar">Comprar</button> <!-- Botón para comprar -->
+        </div>
+    </div>
+    
+    <!-- Modal de agradecimiento -->
+    <div id="gracias-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="cerrarGraciasCompra()">&times;</span>
+            <div id="mensaje-gracias"></div>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

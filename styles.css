@@ -1,0 +1,152 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #1b2553;
+    color: white;
+    
+    text-align: center;
+    height: 18%;
+    position: fixed; /* Mantiene el encabezado en la parte superior */
+    top: 0; /* Fija el encabezado en la parte superior de la página */
+    left: 0; /* Alinea el encabezado a la izquierda */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    z-index: 1000; /* Asegura que el encabezado esté encima de otros elementos */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Opcional: agrega una sombra para mayor visibilidad */
+    
+    
+    
+    
+    
+}
+.titulo{
+    margin-top: 3px;
+}
+.navi{
+    margin-top: 1%;
+}
+
+nav a, nav button {
+    
+    color: white;
+    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 0px;
+    
+}
+
+main {
+    padding: 60px 20px 20px; /* Agrega un espacio en la parte superior para el encabezado fijo */
+    display: flex;
+    gap: 1px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    transition: box-shadow 0.3s;
+    gap: 1px;
+    background-color: #aaa;
+}
+
+.producto:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.producto img {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilos para los botones dentro de los productos */
+.producto button, .producto a {
+    display: inline-block;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 5px 8px;
+    text-decoration: none;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 10px; /* Espacio encima del botón */
+    margin-bottom: 5px; /* Espacio debajo del botón */
+}
+
+.producto button:hover, .producto a:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.producto button:focus, .producto a:focus {
+    outline: none; /* Quita el contorno del botón cuando está enfocado */
+}
+.imagen-fija {
+    position: fixed;
+    top: 0; /* Ajusta la posición desde la parte superior */
+    left: 0; /* Ajusta la posición desde la izquierda */
+    width: 100%; /* Ocupa todo el ancho de la página */
+    height: 100%; /* Ocupa todo el alto de la página */
+    object-fit: cover; /* Asegura que la imagen cubra el área sin distorsionarse */
+    z-index: -1; /* Asegura que la imagen esté detrás de otros contenidos */
+}
+
+
+/* Estilos del modal */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
